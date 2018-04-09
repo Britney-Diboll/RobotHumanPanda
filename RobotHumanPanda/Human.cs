@@ -39,5 +39,10 @@ namespace RobotHumanPanda
             pet.OwnerName = this.Name;
         }
 
+        public Human(string name)
+        {
+            Name = name;
+            Birthday = DateTime.Now;
+        }
     }
 }

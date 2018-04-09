@@ -32,5 +32,11 @@ namespace RobotHumanPanda
             this.Birthday = new DateTime(2010, 12, 25);
             this.SayHello = "rawwwwwwwwwrrrrr";
         }
+
+        public Panda(string name)
+        {
+            Name = name;
+            Birthday = DateTime.Now;
+        }
     }
 }

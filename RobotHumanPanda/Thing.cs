@@ -26,5 +26,16 @@ namespace RobotHumanPanda
             Console.WriteLine(this.Name + " said " + this.SayHello);
             Console.ReadLine();
         }
+
+        public void DayBirth()
+        {
+            Console.WriteLine(this.Name + " was born on " + this.Birthday);
+            Console.ReadLine();
+        }
+
+        public override string ToString()
+        {
+            return $"{SayHello} I am {Name} and I was born on {Birthday}";
+        }
     }
 }

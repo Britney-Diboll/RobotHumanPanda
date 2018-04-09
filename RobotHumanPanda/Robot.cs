@@ -27,10 +27,15 @@ namespace RobotHumanPanda
             this.Name = "Robo-Bob";
             this.Birthday = new DateTime(2018, 1, 1);
             this.VersionNumber = 101;
-            this.SayHello = "HeLlO tHeRe";
+            this.SayHello = "Beep Boop";
+        }
+
+        public Robot(string name)
+        {
+            Name = name;
+            Birthday = DateTime.Now;
         }
 
 
-        
     }
 }
