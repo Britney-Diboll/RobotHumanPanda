@@ -16,10 +16,12 @@ namespace RobotHumanPanda
         public void StartUp()
         {
             IsAsleep = false;
+            Console.WriteLine(this.Name + " takes a minute to boot up in the morning.");
         }
         public void ShutDown()
         {
             IsAsleep = true;
+            Console.WriteLine(this.Name + " will shut down when it over heats.");
         }
 
         public Robot()
@@ -28,6 +30,8 @@ namespace RobotHumanPanda
             this.Birthday = new DateTime(2018, 1, 1);
             this.VersionNumber = 101;
             this.SayHello = "Beep Boop";
+            this.Food = "Oil";
+            this.ShutDown();
         }
 
         public Robot(string name)

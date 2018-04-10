@@ -20,10 +20,13 @@ namespace RobotHumanPanda
                 thing.MyName();
                 thing.Hello();
                 thing.DayBirth();
+                thing.Eat();
+
+                
                 Console.ReadLine();
             }
 
-
+            
 
             
             var Larry = new Human("Larry");

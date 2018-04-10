@@ -13,22 +13,22 @@ namespace RobotHumanPanda
         public void WakeUp()
         {
             IsAsleep = false;
+            Console.WriteLine(this.Name + " is wide awake. Get him some coffee!");
         }
         public void FallAsleep()
         {
             IsAsleep = true;
+            Console.WriteLine(this.Name + " SHHHHHHHH he's sleeping!");
         }
 
-        public string Eat(string food)
-        {
-            return ($"Eating :{food}");
-        }
 
         public Human()
         {
             this.Name = "Terry";
             this.Birthday = new DateTime(1990, 3, 3);
             this.SayHello = "Hi there!";
+            this.Food = "Mangoes";
+            this.WakeUp();
         }
 
         public List<IPets> Pets { get; set; } = new List<IPets>();

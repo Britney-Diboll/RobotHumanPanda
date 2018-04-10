@@ -11,7 +11,7 @@ namespace RobotHumanPanda
         public string Name { get; set; }
         public DateTime Birthday { get; set; }
         public string SayHello { get; set; }
-
+        public string Food { get; set; }
 
 
 
@@ -31,6 +31,11 @@ namespace RobotHumanPanda
         {
             Console.WriteLine(this.Name + " was born on " + this.Birthday);
             Console.ReadLine();
+        }
+
+        public void Eat()
+        {
+            Console.WriteLine(this.Name + " is eating " + this.Food);
         }
 
         public override string ToString()
