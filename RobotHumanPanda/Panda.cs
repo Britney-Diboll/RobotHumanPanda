@@ -31,6 +31,7 @@ namespace RobotHumanPanda
             this.SayHello = "rawwwwwwwwwrrrrr";
             this.Food = "Bamboo shoots";
             this.FallAsleep();
+            this.WakeUp();
         }
 
 

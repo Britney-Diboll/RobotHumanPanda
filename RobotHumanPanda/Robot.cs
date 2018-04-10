@@ -32,6 +32,7 @@ namespace RobotHumanPanda
             this.SayHello = "Beep Boop";
             this.Food = "Oil";
             this.ShutDown();
+            this.StartUp();
         }
 
         public Robot(string name)

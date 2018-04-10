@@ -29,6 +29,7 @@ namespace RobotHumanPanda
             this.SayHello = "Hi there!";
             this.Food = "Mangoes";
             this.WakeUp();
+            this.FallAsleep();
         }
 
         public List<IPets> Pets { get; set; } = new List<IPets>();
